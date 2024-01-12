@@ -30,7 +30,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
-fruit_choice=streamlit.text_input('What fruit?','kiwi')
+fruit_choice=streamlit.text_input('What fruit?')
 streamlit.write('User entered:',fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())

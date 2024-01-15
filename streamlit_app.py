@@ -61,7 +61,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 #Lesson 12
 
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header("Fruit load list contains:")
 streamlit.write('This is the new section')
